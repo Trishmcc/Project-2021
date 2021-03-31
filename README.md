@@ -10,17 +10,34 @@ In 1936, Ronald Fisher, a statistician and biologist developed a linear function
 
 ### Dataset
 
-The Iris dataset is downloaded as a csv format.
+The Iris dataset is downloaded as a csv format.[2]
 
 ### Explanation of code
 
 *Import Pandas Library*
 
-* The Pandas python toolkit which is an open source, is used for data analysis. It makes working with CSV files simplier and more effective as it can read and write data from different formats, i.e CSV (Common Seperated Values)[2] The dataframe object is also useful for subsetting which will be demonstated in this project.
-* print(file_read) clarifies that file-read is the object name that contains the csv file
+* The Pandas python toolkit which is an open source, is used for data analysis. It makes working with CSV files simplier and more effective as it can read and write data from different formats, i.e CSV (Common Seperated Values)[3] The dataframe object is also useful for subsetting which will be demonstated in this project.
+* print(df) clarifies that df is the object name that contains the csv file
+
+*Data Screening*   SHOW CODE
+* Confirm file has been read correctly and identify information about the data.
+print(df) To confirm that the csv file has been read correctly. It also identifies all column names and the number of rows and columns
+
+
+* Dataframe class
+print(type(df)) identifies the class as a dataframe which is a container for storing and manipulatin g two dimensional data [4]
+
+* Sepal Lenght and Width
+df2=df[['sepal_length','sepal_width']] To identify 2 specific columns, i.e sepal lenght and sepal width
+
+
+
 
 ### References:
 1. https://en.wikipedia.org/wiki/Iris_flower_data_set
-2. https://pandas.pydata.org/about/index.html
+2. https://archive.ics.uci.edu/ml/datasets/Iris
+3. https://pandas.pydata.org/about/index.html
+4. https://pythontic.com/pandas/dataframe-attributes/introduction
+https://statkclee.github.io/R-ecology-lesson/03-data-frames.html
 
 
