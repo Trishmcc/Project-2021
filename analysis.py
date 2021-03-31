@@ -14,6 +14,8 @@ df=pd.read_csv("tableconvert_csv_o6an2r.csv")
 
 #print(pd)
 
+#Data screening
+
 #Checking for type of object that has been created, i.e the pandas dataframe which 
 #has the structure of a table.
 
@@ -23,17 +25,21 @@ df=pd.read_csv("tableconvert_csv_o6an2r.csv")
 #print(df1)
 # For sepal Length and Width columns:
 
-
-    
 df2=df[['sepal_length','sepal_width']]
 #print((df2))
+
+#Descriptive Statistics
 
 stats=df.describe()
 #print((stats))
 
 stats=df[['sepal_length']].describe()
-print((stats))
+#print((stats))
 
+#mean by all species
+mean_sl=df.groupby(['species']).mean()
+
+print((mean_sl))
 
 
 

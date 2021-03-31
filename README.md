@@ -40,13 +40,23 @@ df2=df[['sepal_length','sepal_width']] To identify 2 specific columns, i.e sepal
 
 stats=df.describe()   The describe() function summarises the columns of the dataframe. It allows the viewing of the mean, count, max, min, percentile, std and so forth[5] Pandas call the describe function using the dot operator and the double brackets allow for multiple columns to be displayed.[6]
 
-* Subsetting
-
  stats=df[['sepal_length']].describe() This summarises an individual column
+
+*Grouping*
+
+* The groupby function involves splitting the object, applying a function, and/or combining the results.[7] So it searches through multiple categories and groups by a particular value of each category. In this case, the data is Split into groups based on the mean of all attributes for each species.[8]
+
+mean_sl=df.groupby(['species']).mean()
+
+
 
 
 
 They excluded the NaN values. However, the Iris data set has
+
+### Conclusion:
+
+The desscribe function and grouping are important parts of exploratory data analysis and data visualization.
 
 
 
@@ -59,5 +69,8 @@ They excluded the NaN values. However, the Iris data set has
 4. https://statkclee.github.io/R-ecology-lesson/03-data-frames.html
 5. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
 6. https://www.geeksforgeeks.org/python-pandas-dataframe-describe-method/
+7. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html#:~:text=A%20groupby%20operation%20involves%20some,compute%20operations%20on%20these%20groups.
+8. https://pandas.pydata.org/pandas-docs/version/0.25.3/user_guide/groupby.html
+
 
 
