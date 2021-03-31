@@ -20,15 +20,33 @@ The Iris dataset is downloaded as a csv format.[2]
 * print(df) clarifies that df is the object name that contains the csv file
 
 *Data Screening*   SHOW CODE
-* Confirm file has been read correctly and identify information about the data.
+
+* Confirm file has been read correctly and identify information about the data:
+
 print(df) To confirm that the csv file has been read correctly. It also identifies all column names and the number of rows and columns
 
 
-* Dataframe class
-print(type(df)) identifies the class as a dataframe which is a container for storing and manipulatin g two dimensional data [4]
+* Dataframe class:
 
-* Sepal Lenght and Width
+print(type(df)) identifies the class as a dataframe which is a container for storing and manipulatin two dimensional data [4]
+
+* Sepal Lenght and Width:
+
 df2=df[['sepal_length','sepal_width']] To identify 2 specific columns, i.e sepal lenght and sepal width
+
+*Descriptive Statistics*
+
+* describe() function
+
+stats=df.describe()   The describe() function summarises the columns of the dataframe. It allows the viewing of the mean, count, max, min, percentile, std and so forth[5] Pandas call the describe function using the dot operator and the double brackets allow for multiple columns to be displayed.[6]
+
+* Subsetting
+
+ stats=df[['sepal_length']].describe() This summarises an individual column
+
+
+
+They excluded the NaN values. However, the Iris data set has
 
 
 
@@ -38,6 +56,8 @@ df2=df[['sepal_length','sepal_width']] To identify 2 specific columns, i.e sepal
 2. https://archive.ics.uci.edu/ml/datasets/Iris
 3. https://pandas.pydata.org/about/index.html
 4. https://pythontic.com/pandas/dataframe-attributes/introduction
-https://statkclee.github.io/R-ecology-lesson/03-data-frames.html
+4. https://statkclee.github.io/R-ecology-lesson/03-data-frames.html
+5. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+6. https://www.geeksforgeeks.org/python-pandas-dataframe-describe-method/
 
 

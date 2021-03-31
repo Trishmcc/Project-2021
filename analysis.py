@@ -22,9 +22,18 @@ df=pd.read_csv("tableconvert_csv_o6an2r.csv")
 #df1 = ["species"].unique()
 #print(df1)
 # For sepal Length and Width columns:
+
+
     
 df2=df[['sepal_length','sepal_width']]
-print((df2))
+#print((df2))
+
+stats=df.describe()
+#print((stats))
+
+stats=df[['sepal_length']].describe()
+print((stats))
+
 
 
 
