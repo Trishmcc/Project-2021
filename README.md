@@ -71,6 +71,21 @@ stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
 mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
+*Exploratory Data Analysis*
+
+*Import matplotlib*
+
+* Matplotlib is a useful plotting tool with a collection of functions used for visualisations[14]
+
+* Creating the histogram for each variable
+
+CODE
+
+import matplotlib.pyplot as plot_lib
+
+OUTPUT
+
+
 
 
 

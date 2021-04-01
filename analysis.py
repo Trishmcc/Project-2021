@@ -53,6 +53,21 @@ stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
 mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
+#Creating the histogram for each variable
+
+import matplotlib.pyplot as plot_lib
+
+
+plot_lib.figure(figsize=(16,9))
+plot_lib.title("Histogram Plot")
+plot_lib.hist(df.sepal_length,bins=10, color="#33DAFF", label="Histogram Series")
+plot_lib.xlabel("bins")
+plot_lib.ylabel("sepal_length")
+plot_lib.legend(loc="best")
+plot_lib.show()
+plot_lib.savefig("sepal_length.png")
+
+
 
 
 
