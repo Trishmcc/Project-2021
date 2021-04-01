@@ -34,12 +34,19 @@ stats=df.describe()
 #print((stats))
 
 stats=df[['sepal_length']].describe()
-#print((stats))
+print((stats))
 
 #mean by all species
 mean_sl=df.groupby(['species']).mean()
 
-print((mean_sl))
+#print((mean_sl))
+
+#Count by all species
+
+count_species=df.groupby(['species']).count()
+
+#print(count_species)
+
 
 
 

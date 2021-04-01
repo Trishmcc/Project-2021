@@ -16,7 +16,7 @@ The Iris dataset is downloaded as a csv format.[2]
 
 *Import Pandas Library*
 
-* The Pandas python toolkit which is an open source, is used for data analysis. It makes working with CSV files simplier and more effective as it can read and write data from different formats, i.e CSV (Common Seperated Values)[3] The dataframe object is also useful for subsetting which will be demonstated in this project.
+* The Pandas python toolkit which is an open source, is used for data analysis. It makes working with CSV files simplier and more effective as it can read and write data from different formats, i.e CSV (Common Seperated Values)[3] The dataframe object is also useful for groupimg which will be demonstated in this project.
 * print(df) clarifies that df is the object name that contains the csv file
 
 *Data Screening*   SHOW CODE
@@ -32,21 +32,34 @@ print(type(df)) identifies the class as a dataframe which is a container for sto
 
 * Sepal Lenght and Width:
 
-df2=df[['sepal_length','sepal_width']] To identify 2 specific columns, i.e sepal lenght and sepal width
+df2=df[['sepal_length','sepal_width']] To identify 2 specific columns, i.e sepal lenght and sepal width. The double brackets returns a dataframe object as opposed to a series object[4]
 
 *Descriptive Statistics*
 
 * describe() function
 
-stats=df.describe()   The describe() function summarises the columns of the dataframe. It allows the viewing of the mean, count, max, min, percentile, std and so forth[5] Pandas call the describe function using the dot operator and the double brackets allow for multiple columns to be displayed.[6]
+stats=df.describe()   The dataframe.describe() function summarises the columns of the dataframe. It allows the viewing of the mean, count, max, min, std and so forth[5] 
+
+
+Pandas call the describe function using the dot operator and the double square brackets allow for multiple columns to be displayed.[6]
 
  stats=df[['sepal_length']].describe() This summarises an individual column
 
 *Grouping*
 
-* The groupby function involves splitting the object, applying a function, and/or combining the results.[7] So it searches through multiple categories and groups by a particular value of each category. In this case, the data is Split into groups based on the mean of all attributes for each species.[8]
+* mean by all species
+
+* The groupby function involves splitting the object, applying a function, and/or combining the results.[7] So it searches through multiple categories and groups by a particular value of each category.[8] In this case, the data is Split into groups based on the mean of all attributes for each species.[9] This forms a series as one set of brackets are applied i.e [12]
 
 mean_sl=df.groupby(['species']).mean()
+
+* Count by all species
+
+* The pandas toolkit automatically runs the .count() calculation for all remaining columns, i.e species[11]
+
+* 4 attributes are identified and each species has 50 data points. 
+
+count_species=df.groupby(['species']).count()
 
 
 
@@ -56,7 +69,8 @@ They excluded the NaN values. However, the Iris data set has
 
 ### Conclusion:
 
-The desscribe function and grouping are important parts of exploratory data analysis and data visualization.
+
+
 
 
 
@@ -71,6 +85,9 @@ The desscribe function and grouping are important parts of exploratory data anal
 6. https://www.geeksforgeeks.org/python-pandas-dataframe-describe-method/
 7. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html#:~:text=A%20groupby%20operation%20involves%20some,compute%20operations%20on%20these%20groups.
 8. https://pandas.pydata.org/pandas-docs/version/0.25.3/user_guide/groupby.html
-
+9. https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.GroupBy.mean.html
+10. https://stackoverflow.com/questions/29836477/pandas-create-new-column-with-count-from-groupby
+11. https://data36.com/pandas-tutorial-2-aggregation-and-grouping/
+12. https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
 
 
