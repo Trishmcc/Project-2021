@@ -34,7 +34,7 @@ stats=df.describe()
 #print((stats))
 
 stats=df[['sepal_length']].describe()
-print((stats))
+#print((stats))
 
 #mean by all species
 mean_sl=df.groupby(['species']).mean()
@@ -46,6 +46,16 @@ mean_sl=df.groupby(['species']).mean()
 count_species=df.groupby(['species']).count()
 
 #print(count_species)
+
+#Storing summary data to text file
+
+stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+
+mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+
+
+
+
 
 
 

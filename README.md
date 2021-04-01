@@ -25,6 +25,10 @@ The Iris dataset is downloaded as a csv format.[2]
 
 print(df) To confirm that the csv file has been read correctly. It also identifies all column names and the number of rows and columns
 
+* Code
+
+* Output
+
 
 * Dataframe class:
 
@@ -61,6 +65,12 @@ mean_sl=df.groupby(['species']).mean()
 
 count_species=df.groupby(['species']).count()
 
+*Summary data to text file*
+
+stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+
+mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+
 
 
 
@@ -89,5 +99,6 @@ They excluded the NaN values. However, the Iris data set has
 10. https://stackoverflow.com/questions/29836477/pandas-create-new-column-with-count-from-groupby
 11. https://data36.com/pandas-tutorial-2-aggregation-and-grouping/
 12. https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
-
+13. https://realpython.com/python-csv/
+14. https://matplotlib.org/2.0.2/users/pyplot_tutorial.html
 
