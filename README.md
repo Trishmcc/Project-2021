@@ -16,7 +16,7 @@ The Iris dataset is downloaded as a csv format.[2]
 
 *Import Pandas Library*
 
-* The Pandas python toolkit which is an open source, is used for data analysis. It makes working with CSV files simplier and more effective as it can read and write data from different formats, i.e CSV (Common Seperated Values)[3] The dataframe object is also useful for groupimg which will be demonstated in this project.
+* The Pandas python toolkit which is an open source that is used for data analysis. It makes working with CSV files simplier and more effective as it can read and write data from different formats, i.e CSV (Common Seperated Values)[3] The dataframe object is also useful for groupimg which will be demonstated in this project.
 * print(df) clarifies that df is the object name that contains the csv file
 
 *Data Screening*   SHOW CODE
@@ -30,13 +30,14 @@ print(df) To confirm that the csv file has been read correctly. It also identifi
 * Output
 
 
+
 * Dataframe class:
 
-print(type(df)) identifies the class as a dataframe which is a container for storing and manipulatin two dimensional data [4]
+print(type(df)) identifies the class as a dataframe which is a container for storing and manipulating two dimensional data [4]
 
 * Sepal Lenght and Width:
 
-df2=df[['sepal_length','sepal_width']] To identify 2 specific columns, i.e sepal lenght and sepal width. The double brackets returns a dataframe object as opposed to a series object[4]
+df2=df[['sepal_length','sepal_width']] To identify and subset the dataframe into 2 specific columns, i.e sepal lenght and sepal width. The double brackets returns a dataframe object as opposed to a series object[4]
 
 *Descriptive Statistics*
 
@@ -53,7 +54,7 @@ Pandas call the describe function using the dot operator and the double square b
 
 * mean by all species
 
-* The groupby function involves splitting the object, applying a function, and/or combining the results.[7] So it searches through multiple categories and groups by a particular value of each category.[8] In this case, the data is Split into groups based on the mean of all attributes for each species.[9] This forms a series as one set of brackets are applied i.e [12]
+* The groupby function involves splitting the object, applying a function, and/or combining the results.[7] So it searches through multiple categories and groups by a particular value of each category.[8] In this case, the data is split into groups based on the mean of all attributes for each species in the dataframe.[9] 
 
 mean_sl=df.groupby(['species']).mean()
 
@@ -67,6 +68,8 @@ count_species=df.groupby(['species']).count()
 
 *Summary data to text file*
 
+This gives a simple description of the data. The seperator ',' is applied to seperate the columns in the text file. The 'a' append mode is applied too.
+
 stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
 mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
@@ -75,9 +78,17 @@ mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mo
 
 *Import matplotlib*
 
-* Matplotlib is a useful plotting tool with a collection of functions used for visualisations[14]
+* Matplotlib is a useful plotting tool with a collection of functions used for visualisations[15]
 
 * Creating the histogram for each variable
+  
+* A histogram displays continuous data values on a graph by grouping data into bins of equal width. Each bin is plotted as a bar. The height of each bin corresponds to how many data points are in that bin.[16]
+
+Four histograms are created to display the sepal lenght, sepal width, petal lenght and petal width.
+
+The histogram is defined in the function by its x and y axis and histogrm name. The y label is not hard coded meaning the variable will get its value dynamically when the function is called.[17]
+
+
 
 CODE
 
@@ -115,5 +126,12 @@ They excluded the NaN values. However, the Iris data set has
 11. https://data36.com/pandas-tutorial-2-aggregation-and-grouping/
 12. https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
 13. https://realpython.com/python-csv/
-14. https://matplotlib.org/2.0.2/users/pyplot_tutorial.html
-
+14. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
+15. https://matplotlib.org/2.0.2/users/pyplot_tutorial.html
+16. https://statistics.laerd.com/statistical-guides/understanding-histograms.php
+17. https://www.quora.com/What-is-hard-coding-in-Python
+18. https://realpython.com/python-histograms/
+19. https://www.geeksforgeeks.org/matplotlib-pyplot-hist-in-python/
+20. https://stackoverflow.com/questions/332289/how-do-you-change-the-size-of-figures-drawn-with-matplotlib
+21. https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html
+22. https://matplotlib.org/3.1.1/gallery/color/named_colors.html
