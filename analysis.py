@@ -90,17 +90,57 @@ histogram_creation(df.petal_width,"petal_width","hist_pw.png")
 
 #Create a scatter plot
 
-
+'''
 plot_lib.figure(figsize=(16,9))
 plot_lib.title("Scatter Plot")
-plot_lib.scatter(df.sepal_width,df.sepal_length, color="#33DAFF", label="scatter plot series")
+plot_lib.scatter(df.sepal_width,df.sepal_length, color="green", label="scatter plot series")
 plot_lib.xlabel("sepal_width")
 plot_lib.ylabel("sepal_length")
 plot_lib.legend(loc="best")
-plot_lib.show()
+#plot_lib.show()
 plot_lib.savefig("sepal_length_SP_SW.png")
 
 '''
+
+def scatter_plot(x_value, y_value, x_label,y_label,image_name):
+
+    plot_lib.figure(figsize=(16,9))
+    plot_lib.title("Scatter Plot")
+    plot_lib.scatter(x_value,y_value, color="green", label="scatter plot series")
+    plot_lib.xlabel(x_label)
+    plot_lib.ylabel(y_label)
+    plot_lib.legend(loc="best")
+    plot_lib.show()
+    plot_lib.savefig(image_name)
+
+    scatter_plot(df.sepal_lenght,df.sepal_width,"sepal_lenght","sepal_width","SL_SW.png")
+
+    scatter_plot(df.sepal_length,df.petal_length,"sepal_length","petal_length","SL_PL.png")
+
+    scatter_plot(df.sepal_length,df.petal_width,"sepal_length","petal_width", "SL_PW.png") 
+
+    scatter_plot(df.sepal_width,df.petal_lenght,"sepal_width","petal_lenght","SW_PL.png")
+
+    scatter_plot(df.sepal_width,df.petal_width,"sepal_width","petal_width","SW_PW.png")
+
+    scatter_plot(df.petal_lenght,df.petal_width,"petal_lenght","petal_width","PL_PW.png")
+
+
+
+
+    scatter_plot(df.sepal_width,df.sepal_length,"sepal_width","sepal_length","SW_SL.png")
+
+    scatter_plot(df.petal_length,df.sepal_length,"petal_length","sepal_length","PL_SL.png")
+
+    scatter_plot(df.petal_width,df.sepal_length,"petal_width","sepal_length", "PW_SL.png") 
+
+    scatter_plot(df.petal_lenght,df.sepal_width,"petal_lenght","sepal_width","PL_SW.png")
+
+    scatter_plot(df.petal_width,df.sepal_width,"petal_width","sepal_width","PW_SW.png")
+
+    scatter_plot(df.petal_width,df.petal_lenght,"petal_width","petal_lenght","PW_PL.png")
+
+
 
 
 

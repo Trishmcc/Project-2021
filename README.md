@@ -80,6 +80,13 @@ mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mo
 
 * Matplotlib is a useful plotting tool with a collection of functions used for visualisations[15]
 
+CODE
+
+import matplotlib.pyplot as plot_lib
+
+OUTPUT
+
+
 * Creating the histogram for each variable
   
 * A histogram displays continuous data values on a graph by grouping data into bins of equal width. Each bin is plotted as a bar. The height of each bin corresponds to how many data points are in that bin.[16]
@@ -88,16 +95,21 @@ Four histograms are created to display the sepal lenght, sepal width, petal leng
 
 The histogram is defined in the function by its x and y axis and histogrm name. The y label is not hard coded meaning the variable will get its value dynamically when the function is called.[17]
 
+The legend is dislpayed in the upper right[18]
 
+* Create a Scatter Plot
 
-CODE
+A scatter plot is a graph that displays plotted points which identify a relationship between two variables[24]
 
-import matplotlib.pyplot as plot_lib
+The x and y labels are dynamic as are the x and y arguements. 
 
-OUTPUT
+12 scatter plots are created.
 
+Each dot represents either sepal lenght, sepal width, petal lenght and petal width.
 
-
+Variations in Scatter plots: sepal_length=1, sepal_width=2, petal_length=3, petal_width=4
+1,2 1,3 1,4 2,3 2,4 3,4
+2,1 3,1 4,1 3,2 4,2 4,3
 
 
 
@@ -130,8 +142,10 @@ They excluded the NaN values. However, the Iris data set has
 15. https://matplotlib.org/2.0.2/users/pyplot_tutorial.html
 16. https://statistics.laerd.com/statistical-guides/understanding-histograms.php
 17. https://www.quora.com/What-is-hard-coding-in-Python
-18. https://realpython.com/python-histograms/
-19. https://www.geeksforgeeks.org/matplotlib-pyplot-hist-in-python/
-20. https://stackoverflow.com/questions/332289/how-do-you-change-the-size-of-figures-drawn-with-matplotlib
-21. https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html
-22. https://matplotlib.org/3.1.1/gallery/color/named_colors.html
+18. https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html
+19. https://realpython.com/python-histograms/
+20. https://www.geeksforgeeks.org/matplotlib-pyplot-hist-in-python/
+21. https://stackoverflow.com/questions/332289/how-do-you-change-the-size-of-figures-drawn-with-matplotlib
+22. https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html
+23. https://matplotlib.org/3.1.1/gallery/color/named_colors.html
+24. https://en.wikipedia.org/wiki/Scatter_plot
