@@ -97,6 +97,25 @@ The histogram is defined in the function by its x and y axis and histogrm name. 
 
 The legend is dislpayed in the upper right[18]
 
+```
+def histogram_creation(y_value,y_label,image_name):
+
+    plot_lib.figure(figsize=(16,9))
+    plot_lib.title("Histogram Plot")
+    plot_lib.hist(y_value,bins=10, color="blue", label="Histogram Series")
+    plot_lib.xlabel("bins")
+    plot_lib.ylabel(y_label)
+    plot_lib.legend(loc="best")
+    #plot_lib.show()
+    plot_lib.savefig(image_name)
+    
+
+histogram_creation(df.sepal_length,"sepal_length","hist_sl.png")
+histogram_creation(df.sepal_width,"sepal_width","hist_sw.png")
+histogram_creation(df.petal_length,"petal_length","hist_pl.png")
+histogram_creation(df.petal_width,"petal_width","hist_pw.png")
+```
+
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_pl.png)
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_pw.png)
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_sl.png)

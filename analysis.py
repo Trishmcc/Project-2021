@@ -68,6 +68,7 @@ plot_lib.ylabel("sepal_length")
 plot_lib.legend(loc="best")
 plot_lib.show()
 plot_lib.savefig("sepal_length.png")
+
 '''
 
 def histogram_creation(y_value,y_label,image_name):
@@ -86,6 +87,7 @@ histogram_creation(df.sepal_length,"sepal_length","hist_sl.png")
 histogram_creation(df.sepal_width,"sepal_width","hist_sw.png")
 histogram_creation(df.petal_length,"petal_length","hist_pl.png")
 histogram_creation(df.petal_width,"petal_width","hist_pw.png")
+
 
 
 #Create a scatter plot
