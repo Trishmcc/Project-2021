@@ -97,6 +97,11 @@ The histogram is defined in the function by its x and y axis and histogrm name. 
 
 The legend is dislpayed in the upper right[18]
 
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_pl.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_pw.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_sl.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_sw.png)
+
 * Create a Scatter Plot
 
 A scatter plot is a graph that displays plotted points which identify a relationship between two variables[24]
