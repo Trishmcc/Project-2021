@@ -21,13 +21,26 @@ The Iris dataset is downloaded as a csv format.[2]
 
 *Data Screening*   SHOW CODE
 
+
+
+
+
 * Confirm file has been read correctly and identify information about the data:
 
 print(df) To confirm that the csv file has been read correctly. It also identifies all column names and the number of rows and columns
 
 * Code
+```
+import pandas as pd
+
+df=pd.read_csv("tableconvert_csv_o6an2r.csv")
+
+print(df)
+```
 
 * Output
+
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/df.png)
 
 
 
