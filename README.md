@@ -48,6 +48,18 @@ print(df)
 
 print(type(df)) identifies the class as a dataframe which is a container for storing and manipulating two dimensional data [4]
 
+# CODE
+
+```
+print(type(df)) 
+```
+
+# OUTPUT
+
+![alt text](https://github.com/Trishmcc/Project-2021/tree/main/PNG_FILES)
+
+
+
 * Sepal Lenght and Width:
 
 df2=df[['sepal_length','sepal_width']] To identify and subset the dataframe into 2 specific columns, i.e sepal lenght and sepal width. The double brackets returns a dataframe object as opposed to a series object[4]
