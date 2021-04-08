@@ -19,46 +19,46 @@ df=pd.read_csv("tableconvert_csv_o6an2r.csv")
 #Checking for type of object that has been created, i.e the pandas dataframe which 
 #has the structure of a table.
 
-print(type(df))
+#print(type(df))
+
 #df1 = ["species"].unique()
 #print(df1)
+
 # For sepal Length and Width columns:
 
-#df2=df[['sepal_length','sepal_width']]
+df2=df[['sepal_length','sepal_width']]
 #print((df2))
 
 #Descriptive Statistics
 
-#stats=df.describe()
+stats=df.describe()
 #print((stats))
 
-#stats=df[['sepal_length']].describe()
+stats=df[['sepal_length']].describe()
 #print((stats))
 
 #mean by all species
-#attributes_Mean=df.groupby(['species']).mean()
+
+attributes_Mean=df.groupby(['species']).mean()
 
 #print((attributes_Mean))
 
 #Count by all species
 
-#count_species=df.groupby(['species']).count()
+count_species=df.groupby(['species']).count()
 
 #print(count_species)
 
 #Storing summary data to text file
 
-#stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
-#attributes_Mean.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+attributes_Mean.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
 #Creating the histogram for each variable
-
-
-#import matplotlib.pyplot as plot_lib
-
-
-
+```
+import matplotlib.pyplot as plot_lib
+```
 #plot_lib.figure(figsize=(16,9))
 #plot_lib.title("Histogram Plot")
 #plot_lib.hist(df.sepal_length,bins=10, color="blue", label="Histogram Series")
@@ -101,7 +101,7 @@ print(type(df))
 #plot_lib.savefig("sepal_length_SP_SW.png")
 
 
-
+```
 #def scatter_plot(x_value, y_value, x_label,y_label,image_name):
 
     #plot_lib.figure(figsize=(16,9))
@@ -112,6 +112,8 @@ print(type(df))
     #plot_lib.legend(loc="best")
     #plot_lib.show()
     #plot_lib.savefig(image_name)
+    ```
+    
 
     #scatter_plot(df.sepal_lenght,df.sepal_width,"sepal_lenght","sepal_width","SL_SW.png")
 

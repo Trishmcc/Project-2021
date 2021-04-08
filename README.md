@@ -46,13 +46,12 @@ print(df)
 
 print(type(df)) identifies the class as a dataframe which is a container for storing and manipulating two dimensional data [4]
 
-# CODE
+* Code
 
 ```
 print(type(df)) 
 ```
-
-# OUTPUT
+* OUTPUT
 
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/dfType1.png)
 
@@ -60,7 +59,16 @@ print(type(df))
 
 * Sepal Lenght and Width:
 
-df2=df[['sepal_length','sepal_width']] To identify and subset the dataframe into 2 specific columns, i.e sepal lenght and sepal width. The double brackets returns a dataframe object as opposed to a series object[4]
+To identify and subset the dataframe into 2 specific columns, i.e sepal lenght and sepal width. The double brackets returns a dataframe object as opposed to a series object[4]
+
+* Code
+```
+df2=df[['sepal_length','sepal_width']]
+print((df2))
+```
+* Output
+![alt text]()
+
 
 *Descriptive Statistics*
 
@@ -68,10 +76,24 @@ df2=df[['sepal_length','sepal_width']] To identify and subset the dataframe into
 
 stats=df.describe()   The dataframe.describe() function summarises the columns of the dataframe. It allows the viewing of the mean, count, max, min, std and so forth[5] 
 
+* Code
+```
+stats=df.describe()
+print((stats))
+```
+* Output
+![alt text]()
 
-Pandas call the describe function using the dot operator and the double square brackets allow for multiple columns to be displayed.[6]
 
- stats=df[['sepal_length']].describe() This summarises an individual column
+Pandas call the describe function using the dot operator and the double square brackets allow for multiple columns to be displayed.[6] The following code summarises an individual column.
+
+* Code
+```
+stats=df[['sepal_length']].describe()
+print((stats))
+```
+* Output
+![alt text]()
 
 *Grouping*
 
@@ -79,7 +101,15 @@ Pandas call the describe function using the dot operator and the double square b
 
 * The groupby function involves splitting the object, applying a function, and/or combining the results.[7] So it searches through multiple categories and groups by a particular value of each category.[8] In this case, the data is split into groups based on the mean of all attributes for each species in the dataframe.[9] 
 
-mean_sl=df.groupby(['species']).mean()
+* code
+```
+attributes_Mean=df.groupby(['species']).mean()
+
+print((attributes_Mean))
+```
+
+* Output
+![alt text]()
 
 * Count by all species
 
@@ -87,15 +117,24 @@ mean_sl=df.groupby(['species']).mean()
 
 * 4 attributes are identified and each species has 50 data points. 
 
+* Code
+```
 count_species=df.groupby(['species']).count()
+
+print(count_species)
+```
+* Output
+![alt text]()
 
 *Summary data to text file*
 
 This gives a simple description of the data. The seperator ',' is applied to seperate the columns in the text file. The 'a' append mode is applied too.
 
+```
 stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
-mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+attributes_Mean.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+```
 
 *Exploratory Data Analysis*
 
@@ -104,11 +143,9 @@ mean_sl.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mo
 * Matplotlib is a useful plotting tool with a collection of functions used for visualisations[15]
 
 CODE
-
+```
 import matplotlib.pyplot as plot_lib
-
-OUTPUT
-
+```
 
 * Creating the histogram for each variable
   
@@ -119,6 +156,8 @@ Four histograms are created to display the sepal lenght, sepal width, petal leng
 The histogram is defined in the function by its x and y axis and histogrm name. The y label is not hard coded meaning the variable will get its value dynamically when the function is called.[17]
 
 The legend is dislpayed in the upper right[18]
+
+* Code
 
 ```
 def histogram_creation(y_value,y_label,image_name):
@@ -138,6 +177,7 @@ histogram_creation(df.sepal_width,"sepal_width","hist_sw.png")
 histogram_creation(df.petal_length,"petal_length","hist_pl.png")
 histogram_creation(df.petal_width,"petal_width","hist_pw.png")
 ```
+* Output
 
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_pl.png)
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_pw.png)
@@ -157,6 +197,22 @@ Each dot represents either sepal lenght, sepal width, petal lenght and petal wid
 Variations in Scatter plots: sepal_length=1, sepal_width=2, petal_length=3, petal_width=4
 1,2 1,3 1,4 2,3 2,4 3,4
 2,1 3,1 4,1 3,2 4,2 4,3
+
+* Code
+```
+#def scatter_plot(x_value, y_value, x_label,y_label,image_name):
+
+    #plot_lib.figure(figsize=(16,9))
+    #plot_lib.title("Scatter Plot")
+    #plot_lib.scatter(x_value,y_value, color="green", label="scatter plot series")
+    #plot_lib.xlabel(x_label)
+    #plot_lib.ylabel(y_label)
+    #plot_lib.legend(loc="best")
+    #plot_lib.show()
+    #plot_lib.savefig(image_name)
+    ```
+* Output
+![alt text]()
 
 
 
