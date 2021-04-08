@@ -18,9 +18,8 @@ df=pd.read_csv("tableconvert_csv_o6an2r.csv")
 
 #Checking for type of object that has been created, i.e the pandas dataframe which 
 #has the structure of a table.
-```
-print(type(df)) 
-```
+
+print(type(df))
 #df1 = ["species"].unique()
 #print(df1)
 # For sepal Length and Width columns:

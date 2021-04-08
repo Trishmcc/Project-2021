@@ -42,8 +42,6 @@ print(df)
 
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/df.png)
 
-
-
 * Dataframe class:
 
 print(type(df)) identifies the class as a dataframe which is a container for storing and manipulating two dimensional data [4]
@@ -56,7 +54,7 @@ print(type(df))
 
 # OUTPUT
 
-![alt text](https://github.com/Trishmcc/Project-2021/tree/main/PNG_FILES)
+![alt text]()
 
 
 
