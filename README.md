@@ -54,7 +54,7 @@ print(type(df))
 
 # OUTPUT
 
-![alt text]()
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/dfType1.png)
 
 
 
