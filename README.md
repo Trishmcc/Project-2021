@@ -67,7 +67,7 @@ df2=df[['sepal_length','sepal_width']]
 print((df2))
 ```
 * Output
-![alt text]()
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SepalLW.png)
 
 
 *Descriptive Statistics*
@@ -82,7 +82,7 @@ stats=df.describe()
 print((stats))
 ```
 * Output
-![alt text]()
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/Stats.png)
 
 
 Pandas call the describe function using the dot operator and the double square brackets allow for multiple columns to be displayed.[6] The following code summarises an individual column.
@@ -93,7 +93,7 @@ stats=df[['sepal_length']].describe()
 print((stats))
 ```
 * Output
-![alt text]()
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/StatsSL.png)
 
 *Grouping*
 
@@ -109,7 +109,7 @@ print((attributes_Mean))
 ```
 
 * Output
-![alt text]()
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/meanSpecies.png)
 
 * Count by all species
 
@@ -124,7 +124,7 @@ count_species=df.groupby(['species']).count()
 print(count_species)
 ```
 * Output
-![alt text]()
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/countSpecies.png)
 
 *Summary data to text file*
 
@@ -210,7 +210,9 @@ Variations in Scatter plots: sepal_length=1, sepal_width=2, petal_length=3, peta
     #plot_lib.legend(loc="best")
     #plot_lib.show()
     #plot_lib.savefig(image_name)
-    ```
+```
+    
+
 * Output
 ![alt text]()
 
@@ -220,6 +222,18 @@ They excluded the NaN values. However, the Iris data set has
 
 ### Conclusion:
 
+Conclusion
+
+The functions of Panda’s DataFrame objects which include the describe function and grouping are important parts of exploratory data analysis and data visualization.
+The capability of grouping large data frames by different variables
+"Once the data has been loaded into Python, Pandas makes the calculation of different statistics very simple. For example, mean, max, min, standard deviations and more for columns are easily calculable:"
+"The .describe() function is a useful summarisation tool that will quickly display statistics for any variable or group it is applied to."
+"There’s further power put into your hands by mastering the Pandas “groupby()” functionality. Groupby essentially splits the data into different groups depending on a variable of your choice. For example, the expression data.groupby(‘month’)  will split our current DataFrame by month.
+
+The groupby() function returns a GroupBy object, but essentially describes how the rows of the original data set has been split. the GroupBy object .groups variable is a dictionary whose keys are the computed unique groups and corresponding values being the axis labels belonging to each group."  
+
+Groupby output format – Series or DataFrame?
+The output from a groupby and aggregation operation varies between Pandas Series and Pandas Dataframes, which can be confusing for new users. As a rule of thumb, if you calculate more than one column of results, your result will be a Dataframe. For a single column of results, the agg function, by default, will produce a Series.
 
 
 

@@ -101,7 +101,6 @@ import matplotlib.pyplot as plot_lib
 #plot_lib.savefig("sepal_length_SP_SW.png")
 
 
-```
 #def scatter_plot(x_value, y_value, x_label,y_label,image_name):
 
     #plot_lib.figure(figsize=(16,9))
@@ -112,8 +111,7 @@ import matplotlib.pyplot as plot_lib
     #plot_lib.legend(loc="best")
     #plot_lib.show()
     #plot_lib.savefig(image_name)
-    ```
-    
+
 
     #scatter_plot(df.sepal_lenght,df.sepal_width,"sepal_lenght","sepal_width","SL_SW.png")
 
