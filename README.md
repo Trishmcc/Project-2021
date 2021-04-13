@@ -214,7 +214,19 @@ Variations in Scatter plots: sepal_length=1, sepal_width=2, petal_length=3, peta
     
 
 * Output
-![alt text]()
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SL_SW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SL_PL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SL_PW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SW_PL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SW_PW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PL_PW.png)
+
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SW_SL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PL_SL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PW_SL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PL_SW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PW_SW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PW_PL.png)
 
 
 
