@@ -6,7 +6,7 @@
 
 ### Introduction:
 
-In 1936, Ronald Fisher, a statistician and biologist developed a linear function to differentiate Iris species based on the morphology of their flowers. The Fisher’s Iris data set contains 50 samples of the 3 Iris species. They are Iris Setosa, Iris Virginica and Iris versicolor. The dataset contains 4 features - the widths and lengths of petals and sepals. Its reguraly used to test machine learning alogoritms.[1]
+In 1936, Ronald Fisher, a statistician and biologist developed a linear function to differentiate Iris plant species based on the morphology of their flowers. The Fisher’s Iris data set contains 50 samples of the 3 Iris species. They are Iris Setosa, Iris Virginica and Iris versicolor. The dataset contains 4 features - the widths and lengths of petals and sepals. Its reguraly used to test machine learning alogoritms.[1]
 
 ### Dataset
 
@@ -16,16 +16,12 @@ The Iris dataset is downloaded as a csv format.[2]
 
 *Import Pandas Library*
 
-* The Pandas python toolkit which is an open source that is used for data analysis. It makes working with CSV files simplier and more effective as it can read and write data from different formats, i.e CSV (Common Seperated Values)[3] The dataframe object is also useful for groupimg which will be demonstated in this project.
+* The Pandas python toolkik is an open source library that is used for data analysis. It makes working with CSV files simplier and more effective as it can read and write data from different formats, i.e CSV (Common Seperated Values) which is the format of the iris dataset used for this analysis [3] The dataframe object is also useful for groupimg which will be demonstated in this project.
 * print(df) clarifies that df is the object name that contains the csv file
 
-*Data Screening*   SHOW CODE
+*Data Screening*  
 
-
-
-
-
-* Confirm file has been read correctly and identify information about the data:
+* To confirm the file has been read correctly and identify information about the data:
 
 print(df) To confirm that the csv file has been read correctly. It also identifies all column names and the number of rows and columns
 
@@ -234,20 +230,13 @@ They excluded the NaN values. However, the Iris data set has
 
 ### Conclusion:
 
-Conclusion
+The Python open source library Pandas is used to manipulate the Iris dataset. The functions of Panda’s DataFrame objects which include the describe function and grouping are important parts of exploratory data analysis and data visualization.
 
-The functions of Panda’s DataFrame objects which include the describe function and grouping are important parts of exploratory data analysis and data visualization.
-The capability of grouping large data frames by different variables
-"Once the data has been loaded into Python, Pandas makes the calculation of different statistics very simple. For example, mean, max, min, standard deviations and more for columns are easily calculable:"
-"The .describe() function is a useful summarisation tool that will quickly display statistics for any variable or group it is applied to."
-"There’s further power put into your hands by mastering the Pandas “groupby()” functionality. Groupby essentially splits the data into different groups depending on a variable of your choice. For example, the expression data.groupby(‘month’)  will split our current DataFrame by month.
+The describe() function summarises the data by displaying statistics such as the mean, median, standard deviation etc, for any variable or group applied.
 
-The groupby() function returns a GroupBy object, but essentially describes how the rows of the original data set has been split. the GroupBy object .groups variable is a dictionary whose keys are the computed unique groups and corresponding values being the axis labels belonging to each group."  
+Groupby is a powerful function as it allows you to chose particualr variables by splitting the data into various groups as seen above when I grouped the data by species.[27]
 
-Groupby output format – Series or DataFrame?
-The output from a groupby and aggregation operation varies between Pandas Series and Pandas Dataframes, which can be confusing for new users. As a rule of thumb, if you calculate more than one column of results, your result will be a Dataframe. For a single column of results, the agg function, by default, will produce a Series.
-
-
+So, Pandas make the capability of grouping large data frames by different variables and the calculation of different statistics very simple. 
 
 
 
@@ -278,3 +267,4 @@ The output from a groupby and aggregation operation varies between Pandas Series
 22. https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html
 23. https://matplotlib.org/3.1.1/gallery/color/named_colors.html
 24. https://en.wikipedia.org/wiki/Scatter_plot
+27. https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
