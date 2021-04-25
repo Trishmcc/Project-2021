@@ -51,8 +51,6 @@ print(type(df))
 
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/dfType1.png)
 
-
-
 * Sepal Lenght and Width:
 
 To identify and subset the dataframe into 2 specific columns, i.e sepal lenght and sepal width. The double brackets returns a dataframe object as opposed to a series object[4]
@@ -64,7 +62,6 @@ print((df2))
 ```
 * Output
 ![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SepalLW.png)
-
 
 *Descriptive Statistics*
 
