@@ -128,6 +128,9 @@ stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
 attributes_Mean.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 ```
+CODE
+
+![alt text](https://github.com/Trishmcc/Project-2021.git)
 
 *Exploratory Data Analysis (Graphs and visualisation)*
 
