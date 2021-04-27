@@ -129,7 +129,7 @@ stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 attributes_Mean.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 ```
 
-*Exploratory Data Analysis*
+*Exploratory Data Analysis (Graphs and visualisation)*
 
 *Import matplotlib*
 

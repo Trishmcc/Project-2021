@@ -60,6 +60,7 @@ stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
 attributes_Mean.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 '''
+```
 ##Function definition
 def Summary(Column):
     Summary=iris_df[[Column]].describe()
@@ -81,6 +82,8 @@ Summary('sepal_length')
 Summary('petal_length')
 Summary('sepal_width')
 Summary('petal_width')
+
+```
     
 #Creating the histogram for each variable
 
