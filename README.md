@@ -75,7 +75,7 @@ stats=df.describe()
 print((stats))
 ```
 * Output
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/Stats.png)
+![alt text](https://github.com/Trishmcc/Project-2021.git)
 
 
 Pandas call the describe function using the dot operator and the double square brackets allow for multiple columns to be displayed.[6] The following code summarises an individual column.
