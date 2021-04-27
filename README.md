@@ -36,7 +36,7 @@ print(df)
 
 * Output
 
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/df.png)
+![alt text](df.png)
 
 * Dataframe class:
 
@@ -49,7 +49,7 @@ print(type(df))
 ```
 * OUTPUT
 
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/dfType1.png)
+![alt text](dfType1.png)
 
 * Sepal Lenght and Width:
 
@@ -61,7 +61,7 @@ df2=df[['sepal_length','sepal_width']]
 print((df2))
 ```
 * Output
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SepalLW.png)
+![alt text](SepalLW.png)
 
 *Descriptive Statistics*
 
@@ -87,7 +87,7 @@ stats=df[['sepal_length']].describe()
 print((stats))
 ```
 * Output
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/StatsSL.png)
+![alt text](StatsSL.png)
 
 *Grouping*
 
@@ -103,7 +103,7 @@ print((attributes_Mean))
 ```
 
 * Output
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/meanSpecies.png)
+![alt text](meanSpecies.png)
 
 * Count by all species
 
@@ -118,7 +118,7 @@ count_species=df.groupby(['species']).count()
 print(count_species)
 ```
 * Output
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/countSpecies.png)
+![alt text](countSpecies.png)
 
 *Summary data to text file*
 
