@@ -31,12 +31,12 @@ iris_df=pd.read_csv("tableconvert_csv_o6an2r.csv")
 iris_df2=iris_df[['sepal_length','sepal_width']]
 #print((df2))
 '''
-'''
+
 #Descriptive Statistics
 
-stats=iris_df.describe()
+#stats=iris_df.describe()
 #print((stats))
-
+'''
 stats=iris_df[['sepal_length']].describe()
 #print((stats))
 
@@ -59,6 +59,7 @@ count_species=iris_df.groupby(['species']).count()
 stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
 attributes_Mean.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
+'''
 '''
 ```
 ##Function definition
@@ -83,6 +84,8 @@ Summary('petal_length')
 Summary('sepal_width')
 Summary('petal_width')
 
+'''
+'''
 ```
     
 #Creating the histogram for each variable
@@ -168,3 +171,4 @@ scatter_plot(iris_df.petal_length,iris_df.sepal_width,"petal_length","sepal_widt
 scatter_plot(iris_df.petal_width,iris_df.sepal_width,"petal_width","sepal_width","PW_SW.png")
 
 scatter_plot(iris_df.petal_width,iris_df.petal_length,"petal_width","petal_length","PW_PL.png")
+'''
