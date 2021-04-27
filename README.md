@@ -74,6 +74,7 @@ stats=df.describe()   The dataframe.describe() function summarises the columns o
 stats=df.describe()
 print((stats))
 ```
+
 * Output
 ![alt text](editedpngs/describe.png)
 
