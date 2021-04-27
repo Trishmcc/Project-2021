@@ -128,9 +128,33 @@ stats.to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 
 attributes_Mean.round(2).to_csv('summary_iris.txt', header=True, index=True, sep=',', mode='a')
 ```
+The following code creates a function that provides text output - descriptive statistics for all columns. I have completed some formatting to present the data into a presentable format for example \n *2 - next text is 2 lines down. I included a seperator which provides space between two columns
 CODE
 
-![alt text](https://github.com/Trishmcc/Project-2021.git)
+```
+##Function definition
+def Summary(Column):
+    Summary=iris_df[[Column]].describe()
+    #print(Summary)
+    Summary_new=Summary.reset_index()
+    Summary_new.columns.values[0]='Statistics'
+    #print(Summary_new)
+    File_heading=open('summary_iris.txt','a')
+    File_heading.write('The summary statistics for '+Column+ ' are mentioned below'+'\n'*2)
+    File_heading.close()
+    Summary_new.to_csv('summary_iris.txt', header=True, index=False, sep=',', mode='a')
+    File_heading=open('summary_iris.txt','a')
+    File_heading.write('\n'*2)
+    File_heading.close()
+    
+    ##function calling
+    
+Summary('sepal_length')
+Summary('petal_length')
+Summary('sepal_width')
+Summary('petal_width')
+
+```
 
 *Exploratory Data Analysis (Graphs and visualisation)*
 
