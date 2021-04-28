@@ -166,7 +166,7 @@ Summary('petal_width')
 
 * Output
 
-![alt text]()
+![alt text](summaryText.png)
 
 *Exploratory Data Analysis (Graphs and visualisation)*
 
