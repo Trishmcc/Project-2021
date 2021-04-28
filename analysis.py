@@ -11,6 +11,8 @@ import matplotlib.pyplot as plot_lib
 
 iris_df=pd.read_csv("tableconvert_csv_o6an2r.csv")
 
+import seaborn as sns
+
 #print(iris_df)
 
 
@@ -85,9 +87,8 @@ Summary('sepal_width')
 Summary('petal_width')
 
 '''
-'''
-```
-    
+
+ 
 #Creating the histogram for each variable
 
 
@@ -122,15 +123,18 @@ Summary('petal_width')
 
 #Create a scatter plot
 
+sns.pairplot(iris_df,hue="species", height=3)
 
-#plot_lib.figure(figsize=(16,9))
-#plot_lib.title("Scatter Plot")
-#plot_lib.scatter(df.sepal_width,df.sepal_length, color="green", label="scatter plot series")
-#plot_lib.xlabel("sepal_width")
-#plot_lib.ylabel("sepal_length")
-#plot_lib.legend(loc="best")
-#plot_lib.show()
-#plot_lib.savefig("sepal_length_SP_SW.png")
+
+
+plot_lib.figure(figsize=(16,9))
+plot_lib.title("Scatter Plot")
+plot_lib.scatter(iris_df.sepal_width,iris_df.sepal_length, color="green", label="scatter plot series")
+plot_lib.xlabel("sepal_width")
+plot_lib.ylabel("sepal_length")
+plot_lib.legend(loc="best")
+plot_lib.show()
+plot_lib.savefig("sepal_length_SP_SW.png")
 
 
 def scatter_plot(x_value, y_value, x_label,y_label,image_name):
@@ -141,7 +145,7 @@ def scatter_plot(x_value, y_value, x_label,y_label,image_name):
     plot_lib.xlabel(x_label)
     plot_lib.ylabel(y_label)
     plot_lib.legend(loc="best")
-   # plot_lib.show()
+    plot_lib.show()
     plot_lib.savefig(image_name)
 
 
@@ -171,4 +175,3 @@ scatter_plot(iris_df.petal_length,iris_df.sepal_width,"petal_length","sepal_widt
 scatter_plot(iris_df.petal_width,iris_df.sepal_width,"petal_width","sepal_width","PW_SW.png")
 
 scatter_plot(iris_df.petal_width,iris_df.petal_length,"petal_width","petal_length","PW_PL.png")
-'''
