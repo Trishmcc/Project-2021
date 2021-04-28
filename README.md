@@ -61,6 +61,7 @@ df2=df[['sepal_length','sepal_width']]
 print((df2))
 ```
 * Output
+
 ![alt text](SepalLW.png)
 
 *Descriptive Statistics*
@@ -76,6 +77,7 @@ print((stats))
 ```
 
 * Output
+
 ![alt text](editedpngs/describe.png)
 
 
@@ -86,7 +88,9 @@ Pandas call the describe function using the dot operator and the double square b
 stats=df[['sepal_length']].describe()
 print((stats))
 ```
+
 * Output
+
 ![alt text](StatsSL.png)
 
 *Grouping*
@@ -103,6 +107,7 @@ print((attributes_Mean))
 ```
 
 * Output
+
 ![alt text](meanSpecies.png)
 
 * Count by all species
@@ -117,7 +122,9 @@ count_species=df.groupby(['species']).count()
 
 print(count_species)
 ```
+
 * Output
+
 ![alt text](countSpecies.png)
 
 *Summary data to text file*
@@ -156,6 +163,10 @@ Summary('sepal_width')
 Summary('petal_width')
 
 ```
+
+* Output
+
+![alt text]()
 
 *Exploratory Data Analysis (Graphs and visualisation)*
 
