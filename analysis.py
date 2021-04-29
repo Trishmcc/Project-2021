@@ -124,9 +124,9 @@ histogram_creation(iris_df.petal_width,"petal_width","hist_pw.png")
 
 
 #Create a scatter plot
-
-# sns.pairplot(iris_df,hue="species", height=3)
-
+```
+sns.pairplot(iris_df,hue="species", height=3)
+```
 
 
 # plot_lib.figure(figsize=(16,9))
