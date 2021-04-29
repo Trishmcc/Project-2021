@@ -101,22 +101,22 @@ Summary('petal_width')
 # plot_lib.savefig("sepal_length.png")
 
 
-def histogram_creation(y_value,y_label,image_name):
+# def histogram_creation(y_value,y_label,image_name):
 
-    plot_lib.figure(figsize=(10,6))
-    plot_lib.title("Histogram Plot")
-    plot_lib.hist(y_value,bins=10, color="blue", label="Histogram Series")
-    plot_lib.xlabel("bins")
-    plot_lib.ylabel(y_label)
-    plot_lib.legend(loc="best")
-    #plot_lib.show()
-    plot_lib.savefig(image_name)
+#     plot_lib.figure(figsize=(10,6))
+#     plot_lib.title("Histogram Plot")
+#     plot_lib.hist(y_value,bins=10, color="blue", label="Histogram Series")
+#     plot_lib.xlabel("bins")
+#     plot_lib.ylabel(y_label)
+#     plot_lib.legend(loc="best")
+#     plot_lib.show()
+#     plot_lib.savefig(image_name)
     
 
-histogram_creation(iris_df.sepal_length,"sepal_length","hist_sl.png")
-histogram_creation(iris_df.sepal_width,"sepal_width","hist_sw.png")
-histogram_creation(iris_df.petal_length,"petal_length","hist_pl.png")
-histogram_creation(iris_df.petal_width,"petal_width","hist_pw.png")
+# histogram_creation(iris_df.sepal_length,"sepal_length","hist_sl.png")
+# histogram_creation(iris_df.sepal_width,"sepal_width","hist_sw.png")
+# histogram_creation(iris_df.petal_length,"petal_length","hist_pl.png")
+# histogram_creation(iris_df.petal_width,"petal_width","hist_pw.png")
 
 
 
@@ -125,51 +125,51 @@ histogram_creation(iris_df.petal_width,"petal_width","hist_pw.png")
 # sns.pairplot(iris_df,hue="species", height=3)
 
 
-# plot_lib.figure(figsize=(10,6))
-# plot_lib.title("Scatter Plot")
-# plot_lib.scatter(iris_df.sepal_width,iris_df.sepal_length, color="green", label="scatter plot series")
-# plot_lib.xlabel("sepal_width")
-# plot_lib.ylabel("sepal_length")
-# plot_lib.legend(loc="best")
-# plot_lib.show()
-# plot_lib.savefig("sepal_length_SP_SW.png")
+plot_lib.figure(figsize=(10,6))
+plot_lib.title("Scatter Plot")
+plot_lib.scatter(iris_df.sepal_width,iris_df.sepal_length, color="green", label="scatter plot series")
+plot_lib.xlabel("sepal_width")
+plot_lib.ylabel("sepal_length")
+plot_lib.legend(loc="best")
+#plot_lib.show()
+plot_lib.savefig("sepal_length_SP_SW.png")
 
 
-# def scatter_plot(x_value, y_value, x_label,y_label,image_name):
+def scatter_plot(x_value, y_value, x_label,y_label,image_name):
 
-#     plot_lib.figure(figsize=(10,6))
-#     plot_lib.title("Scatter Plot")
-#     plot_lib.scatter(x_value,y_value, color="green", label="scatter plot series")
-#     plot_lib.xlabel(x_label)
-#     plot_lib.ylabel(y_label)
-#     plot_lib.legend(loc="best")
-#     plot_lib.show()
-#     plot_lib.savefig(image_name)
-
-
-# scatter_plot(iris_df.sepal_length,iris_df.sepal_width,"sepal_length","sepal_width","SL_SW.png")
-
-# scatter_plot(iris_df.sepal_length,iris_df.petal_length,"sepal_length","petal_length","SL_PL.png")
-
-# scatter_plot(iris_df.sepal_length,iris_df.petal_width,"sepal_length","petal_width", "SL_PW.png") 
-
-# scatter_plot(iris_df.sepal_width,iris_df.petal_length,"sepal_width","petal_length","SW_PL.png")
-
-# scatter_plot(iris_df.sepal_width,iris_df.petal_width,"sepal_width","petal_width","SW_PW.png")
-
-# scatter_plot(iris_df.petal_length,iris_df.petal_width,"petal_length","petal_width","PL_PW.png")
+    plot_lib.figure(figsize=(10,6))
+    plot_lib.title("Scatter Plot")
+    plot_lib.scatter(x_value,y_value, color="green", label="scatter plot series")
+    plot_lib.xlabel(x_label)
+    plot_lib.ylabel(y_label)
+    plot_lib.legend(loc="best")
+    #plot_lib.show()
+    plot_lib.savefig(image_name)
 
 
+scatter_plot(iris_df.sepal_length,iris_df.sepal_width,"sepal_length","sepal_width","SL_SW.png")
+
+scatter_plot(iris_df.sepal_length,iris_df.petal_length,"sepal_length","petal_length","SL_PL.png")
+
+scatter_plot(iris_df.sepal_length,iris_df.petal_width,"sepal_length","petal_width", "SL_PW.png") 
+
+scatter_plot(iris_df.sepal_width,iris_df.petal_length,"sepal_width","petal_length","SW_PL.png")
+
+scatter_plot(iris_df.sepal_width,iris_df.petal_width,"sepal_width","petal_width","SW_PW.png")
+
+scatter_plot(iris_df.petal_length,iris_df.petal_width,"petal_length","petal_width","PL_PW.png")
 
 
-# scatter_plot(iris_df.sepal_width,iris_df.sepal_length,"sepal_width","sepal_length","SW_SL.png")
 
-# scatter_plot(iris_df.petal_length,iris_df.sepal_length,"petal_length","sepal_length","PL_SL.png")
 
-# scatter_plot(iris_df.petal_width,iris_df.sepal_length,"petal_width","sepal_length", "PW_SL.png") 
+scatter_plot(iris_df.sepal_width,iris_df.sepal_length,"sepal_width","sepal_length","SW_SL.png")
 
-# scatter_plot(iris_df.petal_length,iris_df.sepal_width,"petal_length","sepal_width","PL_SW.png")
+scatter_plot(iris_df.petal_length,iris_df.sepal_length,"petal_length","sepal_length","PL_SL.png")
 
-# scatter_plot(iris_df.petal_width,iris_df.sepal_width,"petal_width","sepal_width","PW_SW.png")
+scatter_plot(iris_df.petal_width,iris_df.sepal_length,"petal_width","sepal_length", "PW_SL.png") 
 
-# scatter_plot(iris_df.petal_width,iris_df.petal_length,"petal_width","petal_length","PW_PL.png")
+scatter_plot(iris_df.petal_length,iris_df.sepal_width,"petal_length","sepal_width","PL_SW.png")
+
+scatter_plot(iris_df.petal_width,iris_df.sepal_width,"petal_width","sepal_width","PW_SW.png")
+
+scatter_plot(iris_df.petal_width,iris_df.petal_length,"petal_width","petal_length","PW_PL.png")
