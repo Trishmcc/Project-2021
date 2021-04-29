@@ -219,7 +219,7 @@ histogram_creation(df.petal_width,"petal_width","hist_pw.png")
 
 * Create a Scatter Plot
 
-I imported Seaborn to produce neater looking graphs [28] Conclusions can be reached using Pairplot as it allows you to compare and observe the data.[29]
+I imported Seaborn to produce neater looking scatter plot graphs [28] Conclusions can be reached using Pairplot as it allows you to compare and observe the data.[29]
 
 A scatter plot is a graph that displays plotted points which identify a relationship between two variables[24]
 
@@ -254,6 +254,20 @@ sns.pairplot(iris_df,hue="species", height=3)
     
 
 * Output
+
+![alt text](PL_PW.png)
+![alt text](PL_SL.png)
+![alt text](PL_SW.png)
+![alt text](PW_PL.png)
+![alt text](PW_SL.png)
+![alt text](PW_SW.png)
+
+![alt text](SL_PL.png)
+![alt text](SL_PW.png)
+![alt text](SL_SW.png)
+![alt text](SW_PL.png)
+![alt text](SW_PW.png)
+![alt text](SW_SL.png)
 
 ![alt text](Scatterplot.png)
 
