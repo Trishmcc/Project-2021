@@ -218,6 +218,8 @@ histogram_creation(df.petal_width,"petal_width","hist_pw.png")
 
 * Create a Scatter Plot
 
+I imported Seaborn to produce neater looking graphs [28]
+
 A scatter plot is a graph that displays plotted points which identify a relationship between two variables[24]
 
 The x and y labels are dynamic as are the x and y arguements. 
@@ -289,3 +291,5 @@ So, Pandas make the capability of grouping large data frames by different variab
 23. https://matplotlib.org/3.1.1/gallery/color/named_colors.html
 24. https://en.wikipedia.org/wiki/Scatter_plot
 27. https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
+28. https://seaborn.pydata.org/
+29. https://seaborn.pydata.org/generated/seaborn.pairplot.html
