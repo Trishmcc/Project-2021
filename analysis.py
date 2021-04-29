@@ -91,14 +91,14 @@ Summary('petal_width')
  
 #Creating the histogram for each variable
 
-plot_lib.figure(figsize=(10,6))
-plot_lib.title("Histogram Plot")
-plot_lib.hist(iris_df.sepal_length,bins=10, color="blue", label="Histogram Series")
-plot_lib.xlabel("bins")
-plot_lib.ylabel("sepal_length")
-plot_lib.legend(loc="best")
-plot_lib.show()
-plot_lib.savefig("sepal_length.png")
+# plot_lib.figure(figsize=(10,6))
+# plot_lib.title("Histogram Plot")
+# #plot_lib.hist(iris_df.sepal_length,bins=10, color="blue", label="Histogram Series")
+# plot_lib.xlabel("bins")
+# plot_lib.ylabel("sepal_length")
+# plot_lib.legend(loc="best")
+# #plot_lib.show()
+# plot_lib.savefig("sepal_length.png")
 
 
 def histogram_creation(y_value,y_label,image_name):
@@ -109,7 +109,7 @@ def histogram_creation(y_value,y_label,image_name):
     plot_lib.xlabel("bins")
     plot_lib.ylabel(y_label)
     plot_lib.legend(loc="best")
-    plot_lib.show()
+    #plot_lib.show()
     plot_lib.savefig(image_name)
     
 
