@@ -211,10 +211,7 @@ histogram_creation(df.petal_width,"petal_width","hist_pw.png")
 ```
 * Output
 
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_pl.png)
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_pw.png)
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_sl.png)
-![alt text](https://github.com/Trishmcc/Project-2021/blob/main/hist_sw.png)
+![alt text](Hist.png)
 
 * Create a Scatter Plot
 
