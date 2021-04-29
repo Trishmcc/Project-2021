@@ -255,19 +255,20 @@ sns.pairplot(iris_df,hue="species", height=3)
 
 * Output
 
-![alt text](PL_PW.png)
-![alt text](PL_SL.png)
-![alt text](PL_SW.png)
-![alt text](PW_PL.png)
-![alt text](PW_SL.png)
-![alt text](PW_SW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SL_SW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SL_PL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SL_PW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SW_PL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SW_PW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PL_PW.png)
 
-![alt text](SL_PL.png)
-![alt text](SL_PW.png)
-![alt text](SL_SW.png)
-![alt text](SW_PL.png)
-![alt text](SW_PW.png)
-![alt text](SW_SL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/SW_SL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PL_SL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PW_SL.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PL_SW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PW_SW.png)
+![alt text](https://github.com/Trishmcc/Project-2021/blob/main/PW_PL.png)
+
 
 ![alt text](Scatterplot.png)
 

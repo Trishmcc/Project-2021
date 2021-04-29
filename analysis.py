@@ -91,10 +91,7 @@ Summary('petal_width')
  
 #Creating the histogram for each variable
 
-sns.pairplot(iris_df,hue="species", diag_kind = "hist", height=3)
-
-
-plot_lib.figure(figsize=(16,9))
+plot_lib.figure(figsize=(10,6))
 plot_lib.title("Histogram Plot")
 plot_lib.hist(iris_df.sepal_length,bins=10, color="blue", label="Histogram Series")
 plot_lib.xlabel("bins")
@@ -106,7 +103,7 @@ plot_lib.savefig("sepal_length.png")
 
 def histogram_creation(y_value,y_label,image_name):
 
-    plot_lib.figure(figsize=(16,9))
+    plot_lib.figure(figsize=(10,6))
     plot_lib.title("Histogram Plot")
     plot_lib.hist(y_value,bins=10, color="blue", label="Histogram Series")
     plot_lib.xlabel("bins")
@@ -128,7 +125,7 @@ histogram_creation(iris_df.petal_width,"petal_width","hist_pw.png")
 # sns.pairplot(iris_df,hue="species", height=3)
 
 
-# plot_lib.figure(figsize=(16,9))
+# plot_lib.figure(figsize=(10,6))
 # plot_lib.title("Scatter Plot")
 # plot_lib.scatter(iris_df.sepal_width,iris_df.sepal_length, color="green", label="scatter plot series")
 # plot_lib.xlabel("sepal_width")
@@ -140,7 +137,7 @@ histogram_creation(iris_df.petal_width,"petal_width","hist_pw.png")
 
 # def scatter_plot(x_value, y_value, x_label,y_label,image_name):
 
-#     plot_lib.figure(figsize=(16,9))
+#     plot_lib.figure(figsize=(10,6))
 #     plot_lib.title("Scatter Plot")
 #     plot_lib.scatter(x_value,y_value, color="green", label="scatter plot series")
 #     plot_lib.xlabel(x_label)
